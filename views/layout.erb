@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>  <html lang='en' class='ie ie6'> <![endif]-->
+<!--[if IE 7 ]>     <html lang='en' class='ie ie7'> <![endif]-->
+<!--[if IE 8 ]>     <html lang='en' class='ie ie8'> <![endif]-->
+<!--[if IE 9 ]>     <html lang='en' class='ie ie9'> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang='en'> <!--<![endif]-->
+<head>
+<meta charset='utf-8'>
+<title></title>
+<link rel='stylesheet' href='/css/reset.css' />
+<link rel='stylesheet' href='/css/screen.css' media='screen' />
+<!--[if lt IE 9]>
+<script src='//html5shiv.googlecode.com/svn/trunk/html5.js'></script>
+<![endif]-->
+</head>
+<body>
+
+<div id='container'>
+<%= partial :'partials/_flash_message' unless [:info, :error].length == 0 %>
+<%= yield %>
+</div>
+
+<script src='/js/libs/jquery-1.7.1.min.js'></script>
+<script src='/js/global.js'></script>
+</body>
+</html>

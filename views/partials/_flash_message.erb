@@ -1,0 +1,7 @@
+<% [:info, :error].each do |type| %>
+<% unless flash[type].nil? %>
+<div class="flash_message <%= type.to_s %>">
+  <p><%= flash[type] %></p>
+</div>
+<% end %>
+<% end %>

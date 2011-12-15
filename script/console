@@ -1,0 +1,3 @@
+#!/usr/bin/env ruby
+ENV['RACK_ENV'] = ARGV[0] if ARGV && ARGV[0]
+exec "irb -r #{File.join File.expand_path(File.dirname(__FILE__)), '..', 'env.rb'}"
