@@ -29,9 +29,9 @@ $ git commit -m 'init'
 $ heroku create --stack cedar
 $ heroku addons:add logging
 $ heroku addons:add shared-database
-$ heroku run rake db:bootstrap
 $ git push heroku master
-$ heroku ps; heroku open; heroku logs --tail
+$ heroku run rake db:bootstrap
+$ heroku open; heroku ps; heroku logs --tail
 ```
 
 ## Credit
