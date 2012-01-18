@@ -2,19 +2,25 @@
 
 A Ruby/Sinatra web application boilerplate optimized for immediate deployment to your favorite cloud server.
 
+Based on [Kyle Drake](http://kyledrake.net/)'s [Sammy Davis Junior](https://github.com/kyledrake/sammy_davis_jr) boilerplate.
+
 ## Quick Install
 
-Martin prefers [Bundler](http://gembundler.com/) for dependency management and recommends [Thin](http://code.macournoyer.com/thin/) as a web server.
+Martin uses [Bundler](http://gembundler.com/) for dependency management, [DataMapper](http://datamapper.org/) for database interactions, and [Thin](http://code.macournoyer.com/thin/) as a web server.
+
+Put this code in your terminal...
 
 ```
+$ git clone git://github.com/ngoldman/martin.git
+$ cd martin
 $ bundle install
 $ bundle exec rake db:bootstrap
 $ bundle exec thin start
 ```
 
-You should have a test server running at ```http://localhost:3000```.
+...and you should have a test server running at ```http://localhost:3000```.
 
-Martin suggests immediately replacing everything in ```views/index.erb```, ```public/js/global.js```, and ```public/css/screen.css```.
+Martin suggestly immediately replacing everything in ```views/index.erb```, ```public/js/global.js```, and ```public/css/screen.css```.
 
 ## Quick Deploy
 
@@ -36,7 +42,7 @@ $ heroku open; heroku ps; heroku logs --tail
 
 ## Credit
 
-Martin is heavily inspired by [Sammy Davis Junior](https://github.com/kyledrake/sammy_davis_jr). After using Sammy as a starting point on a few projects I found myself removing and adding the same things over and over, so I thought I'd create a quick starting point tailored to the needs of the apps I've been writing.
+Martin is heavily inspired by [Kyle Drake](http://kyledrake.net/)'s [Sammy Davis Junior](https://github.com/kyledrake/sammy_davis_jr) boilerplate. After using Sammy as a starting point on a few projects I found myself removing and adding the same things over and over, so I thought I'd create a quick starting point tailored to the needs of the apps I've been writing. A great deal of the code in Martin comes from Sammy.
 
 ## License
 
