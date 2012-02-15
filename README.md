@@ -20,7 +20,7 @@ $ bundle exec thin start
 
 ...and you should have a test server running at ```http://localhost:3000```.
 
-Martin suggestly immediately replacing everything in ```views/index.erb```, ```public/js/global.js```, and ```public/css/screen.css```.
+Martin suggests immediately replacing everything in ```views/index.erb```, ```public/js/global.js```, and ```public/css/screen.css```.
 
 ## Quick Deploy
 
