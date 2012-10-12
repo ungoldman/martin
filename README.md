@@ -10,7 +10,7 @@ Martin uses [Bundler](http://gembundler.com/) for dependency management, [DataMa
 
 Put this code in your terminal...
 
-```
+```sh
 $ git clone git://github.com/ngoldman/martin.git
 $ cd martin
 $ bundle install
@@ -28,7 +28,7 @@ Once you've got things working to your satisfaction, all you need to do is commi
 
 Martin recommends [Heroku](http://heroku.com) as the ideal candidate for deployment to a cloud staging server. The Heroku gem is included in the Gemfile by default. A Procfile is also included to ensure Martin will play nice with Heroku's new cedar stack.
 
-```
+```sh
 $ git clone git://github.com/ngoldman/martin.git [dir name] && cd [dir name]
 $ heroku create
 $ heroku addons:add heroku-postgresql:dev
