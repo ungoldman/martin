@@ -29,15 +29,13 @@ Once you've got things working to your satisfaction, all you need to do is commi
 Martin recommends [Heroku](http://heroku.com) as the ideal candidate for deployment to a cloud staging server. The Heroku gem is included in the Gemfile by default. A Procfile is also included to ensure Martin will play nice with Heroku's new cedar stack.
 
 ```
-$ git init
-$ git add .
-$ git commit -m 'init'
-$ heroku create --stack cedar
-$ heroku addons:add logging
-$ heroku addons:add shared-database
+$ git clone git://github.com/ngoldman/martin.git [dir name] && cd [dir name]
+$ heroku create
+$ heroku addons:add heroku-postgresql:dev
+$ heroku pg:promote [database name] # get this by running `heroku addons`, should be something like `HEROKU_POSTGRESQL_JADE`
 $ git push heroku master
 $ heroku run rake db:bootstrap
-$ heroku open; heroku ps; heroku logs --tail
+$ heroku open
 ```
 
 ## Credit
