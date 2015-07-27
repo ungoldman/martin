@@ -1,3 +1,9 @@
+# DEPRECATION NOTICE
+
+**No longer supported or maintained.** Use at your own risk.
+
+---
+
 # Martin
 
 A Ruby/Sinatra web application boilerplate optimized for immediate deployment to your favorite cloud server.
